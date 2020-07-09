@@ -1,0 +1,28 @@
+{
+  "name": "wenprise/assets",
+  "description": "Most used assets in WordPress theme development.",
+  "require": {
+    "ext-json": "*"
+  },
+  "autoload": {
+    "psr-4": {
+      "Wenprise\\Assets\\": "src/"
+    },
+    "files": [
+      "src/init.php"
+    ]
+  },
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Amos Lee",
+      "email": "iwillhappy1314@gmail.com"
+    }
+  ],
+  "minimum-stability": "stable",
+  "config": {
+    "preferred-install": {
+      "*": "dist"
+    }
+  }
+}
