@@ -18,12 +18,12 @@ wp_enqueue_script('wprs-slick-carousel');
 
 ## Use Jquery Ias
 
-```
+```php
 wp_enqueue_script('wprs-jquery-ias');
 ```
 
 ## Use Jquery imagesloaded
 
-```
+```php
 wp_enqueue_script('wprs-imagesloaded');
 ```
