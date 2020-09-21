@@ -16,9 +16,9 @@
                 "imagesloaded"
             ]
         },
-        "sticky-kit.js": {
+        "theia-sticky-sidebar.js": {
             "bower": [
-                "sticky-kit"
+                "theia-sticky-sidebar"
             ]
         },
         "isotope.js": {
