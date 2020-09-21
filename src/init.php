@@ -18,6 +18,7 @@ if (function_exists('wp_register_script')) {
     wp_register_script('wprs-jquery-ias', wenprise_assets('/scripts/jquery-ias.js'), ['jquery'], WENPRISE_ASSETS_VERSION, true);
     wp_register_script('wprs-slick-carousel', wenprise_assets('/scripts/slick-carousel.js'), ['jquery'], WENPRISE_ASSETS_VERSION, true);
     wp_register_script('wprs-magnific-popup', wenprise_assets('/scripts/magnific-popup.js'), ['jquery'], WENPRISE_ASSETS_VERSION, true);
+    wp_register_script('wprs-sticky-kit', wenprise_assets('/scripts/sticky-kit.js'), ['jquery'], WENPRISE_ASSETS_VERSION, true);
 
     wp_enqueue_style('wprs-magnific-popup', wenprise_assets('/styles/magnific-popup.css'), [], WENPRISE_ASSETS_VERSION, 'screen');
 }
