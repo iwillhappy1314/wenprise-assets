@@ -16,6 +16,11 @@
                 "imagesloaded"
             ]
         },
+        "sticky-kit.js": {
+            "bower": [
+                "sticky-kit"
+            ]
+        },
         "isotope.js": {
             "bower": [
                 "isotope-layout"
