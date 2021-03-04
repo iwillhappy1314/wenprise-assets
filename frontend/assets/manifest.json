@@ -16,6 +16,11 @@
                 "imagesloaded"
             ]
         },
+        "theia-sticky-sidebar.js": {
+            "bower": [
+                "theia-sticky-sidebar"
+            ]
+        },
         "isotope.js": {
             "bower": [
                 "isotope-layout"
