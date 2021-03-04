@@ -25,12 +25,18 @@ class Init
     {
         wp_register_script('wprs-imagesloaded', $this->get_asset_uri('/scripts/imagesloaded.js'), ['jquery'], WENPRISE_ASSETS_VERSION, true);
         wp_register_script('wprs-isotope', $this->get_asset_uri('/scripts/isotope.js'), [], WENPRISE_ASSETS_VERSION, true);
+
         wp_register_script('wprs-jquery-ias', $this->get_asset_uri('/scripts/jquery-ias.js'), ['jquery'], WENPRISE_ASSETS_VERSION, true);
+
         wp_register_script('wprs-slick-carousel', $this->get_asset_uri('/scripts/slick-carousel.js'), ['jquery'], WENPRISE_ASSETS_VERSION, true);
+
         wp_register_script('wprs-magnific-popup', $this->get_asset_uri('/scripts/magnific-popup.js'), ['jquery'], WENPRISE_ASSETS_VERSION, true);
+
         wp_register_script('theia-sticky-sidebar', $this->get_asset_uri('/scripts/theia-sticky-sidebar.js'), ['jquery'], WENPRISE_ASSETS_VERSION, true);
 
         wp_register_style('wprs-magnific-popup', $this->get_asset_uri('/styles/magnific-popup.css'), [], WENPRISE_ASSETS_VERSION, 'screen');
+
+        wp_register_style('wprs-slick-carousel', $this->get_asset_uri('/styles/slick-carousel.css'), [], WENPRISE_ASSETS_VERSION, 'screen');
     }
 
 
