@@ -16,6 +16,11 @@
                 "imagesloaded"
             ]
         },
+        "pretty-photo.js": {
+            "files": [
+                "scripts/plugins/jquery.prettyPhoto.js"
+            ]
+        },
         "theia-sticky-sidebar.js": {
             "bower": [
                 "theia-sticky-sidebar"

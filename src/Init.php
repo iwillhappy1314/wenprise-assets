@@ -24,6 +24,9 @@ class Init
     public function register_assets()
     {
         wp_register_script('wprs-imagesloaded', $this->get_asset_uri('/scripts/imagesloaded.js'), ['jquery'], WENPRISE_ASSETS_VERSION, true);
+
+        wp_register_script('wprs-pretty-photo', $this->get_asset_uri('/scripts/pretty-photo.js'), ['jquery'], WENPRISE_ASSETS_VERSION, true);
+
         wp_register_script('wprs-isotope', $this->get_asset_uri('/scripts/isotope.js'), [], WENPRISE_ASSETS_VERSION, true);
 
         wp_register_script('wprs-jquery-ias', $this->get_asset_uri('/scripts/jquery-ias.js'), ['jquery'], WENPRISE_ASSETS_VERSION, true);
