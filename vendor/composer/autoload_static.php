@@ -7,7 +7,7 @@ namespace Composer\Autoload;
 class ComposerStaticInit26bb8e9d903c52e774f62c5ff99187d0
 {
     public static $files = array (
-        '0db0c0acff0daf29fe3e4cbb1b31b51a' => __DIR__ . '/../..' . '/src/init.php',
+        '3da2cb9ed2940c094f3520403efca1f3' => __DIR__ . '/../..' . '/src/Init.php',
     );
 
     public static $prefixLengthsPsr4 = array (
@@ -24,11 +24,17 @@ class ComposerStaticInit26bb8e9d903c52e774f62c5ff99187d0
         ),
     );
 
+    public static $classMap = array (
+        'Composer\\InstalledVersions' => __DIR__ . '/..' . '/composer/InstalledVersions.php',
+        'Wenprise\\Assets\\Init' => __DIR__ . '/../..' . '/src/Init.php',
+    );
+
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
             $loader->prefixLengthsPsr4 = ComposerStaticInit26bb8e9d903c52e774f62c5ff99187d0::$prefixLengthsPsr4;
             $loader->prefixDirsPsr4 = ComposerStaticInit26bb8e9d903c52e774f62c5ff99187d0::$prefixDirsPsr4;
+            $loader->classMap = ComposerStaticInit26bb8e9d903c52e774f62c5ff99187d0::$classMap;
 
         }, null, ClassLoader::class);
     }

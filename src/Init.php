@@ -83,7 +83,7 @@ class Init
             $manifest      = $this->get_manifest($manifest_path);
         }
 
-        if (array_key_exists($file, $manifest) && (defined('SCRIPT_DEBUG') && SCRIPT_DEBUG)) {
+        if (array_key_exists($file, $manifest) && (!defined('SCRIPT_DEBUG') || SCRIPT_DEBUG == false)) {
             return $dist_uri . $directory . $manifest[ $file ];
         }
 
