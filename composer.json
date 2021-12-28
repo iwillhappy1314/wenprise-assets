@@ -9,7 +9,7 @@
       "Wenprise\\Assets\\": "src/"
     },
     "files": [
-      "src/init.php"
+      "src/Init.php"
     ]
   },
   "license": "MIT",
