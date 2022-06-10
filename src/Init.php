@@ -37,9 +37,13 @@ class Init
 
         wp_register_script('theia-sticky-sidebar', $this->get_asset_uri('/scripts/theia-sticky-sidebar.js'), ['jquery'], WENPRISE_ASSETS_VERSION, true);
 
+        wp_register_script('wprs-woo', $this->get_asset_uri('/scripts/wow.js'), [], WENPRISE_ASSETS_VERSION, 'true');
+
         wp_register_style('wprs-magnific-popup', $this->get_asset_uri('/styles/magnific-popup.css'), [], WENPRISE_ASSETS_VERSION, 'screen');
 
         wp_register_style('wprs-slick-carousel', $this->get_asset_uri('/styles/slick-carousel.css'), [], WENPRISE_ASSETS_VERSION, 'screen');
+
+        wp_register_style('wprs-animate', $this->get_asset_uri('/styles/animate.css'), [], WENPRISE_ASSETS_VERSION, 'screen');
     }
 
 

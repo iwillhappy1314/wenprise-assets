@@ -5,10 +5,10 @@ const changed = require('gulp-changed');
 const concat = require('gulp-concat');
 const flatten = require('gulp-flatten');
 const gulp = require('gulp');
-const gulpif = require('gulp-if');
+const gulpIf = require('gulp-if');
 const imagemin = require('gulp-imagemin');
 const jshint = require('gulp-jshint');
-const lazypipe = require('lazypipe');
+const lazyPipe = require('lazypipe');
 const merge = require('merge-stream');
 const cssNano = require('gulp-cssnano');
 const plumber = require('gulp-plumber');
@@ -93,27 +93,27 @@ const cssPurge = () => {
 const cssTasks = (filename) => {
     const tailwindcss = require('tailwindcss');
 
-    return lazypipe().pipe(() => {
-        return gulpif(!enabled.failStyleTask, plumber());
+    return lazyPipe().pipe(() => {
+        return gulpIf(!enabled.failStyleTask, plumber());
     }).pipe(() => {
-        return gulpif(enabled.maps, sourcemaps.init());
+        return gulpIf(enabled.maps, sourcemaps.init());
     }).pipe(() => {
-        return gulpif('*.scss', sass({
+        return gulpIf('*.scss', sass({
             outputStyle: 'nested', // libsass doesn't support expanded yet
             precision: 10,
             includePaths: ['.'],
             errLogToConsole: !enabled.failStyleTask,
         }));
     }).pipe(concat, filename).pipe(autoprefixer).pipe(() => {
-        return gulpif(enabled.rev, cssPurge());
+        return gulpIf(enabled.rev, cssPurge());
     }).pipe(() => {
-        return gulpif(enabled.clean, cssPurge());
+        return gulpIf(enabled.clean, cssPurge());
     }).pipe(() => {
-        return gulpif(enabled.rev, cssNano({safe: true}));
+        return gulpIf(enabled.rev, cssNano({safe: true}));
     }).pipe(() => {
-        return gulpif(enabled.rev, rev());
+        return gulpIf(enabled.rev, rev());
     }).pipe(() => {
-        return gulpif(enabled.maps, sourcemaps.write('.', {
+        return gulpIf(enabled.maps, sourcemaps.write('.', {
             sourceRoot: 'assets/styles/',
         }));
     })();
@@ -123,16 +123,16 @@ const cssTasks = (filename) => {
  * JS 处理管道
  */
 const jsTasks = (filename) => {
-    return lazypipe().pipe(() => {
-        return gulpif(enabled.maps, sourcemaps.init());
+    return lazyPipe().pipe(() => {
+        return gulpIf(enabled.maps, sourcemaps.init());
     }).pipe(concat, filename).pipe(uglify, {
         compress: {
             'drop_debugger': enabled.stripJSDebug,
         },
     }).pipe(() => {
-        return gulpif(enabled.rev, rev());
+        return gulpIf(enabled.rev, rev());
     }).pipe(() => {
-        return gulpif(enabled.maps, sourcemaps.write('.', {
+        return gulpIf(enabled.maps, sourcemaps.write('.', {
             sourceRoot: 'assets/scripts/',
         }));
     })();
@@ -142,7 +142,7 @@ const jsTasks = (filename) => {
  * 写入到版本说明
  */
 const writeToManifest = (directory) => {
-    return lazypipe().
+    return lazyPipe().
         pipe(gulp.dest, path.dist + directory).
         pipe(browserSync.stream, {match: '**/*.{js,css}'}).
         pipe(rev.manifest, revManifest, {
@@ -227,7 +227,7 @@ gulp.task('jshint', gulp.series(async () => {
         'gulpfile.js'].concat(project.js)).
         pipe(jshint()).
         pipe(jshint.reporter('jshint-stylish')).
-        pipe(gulpif(enabled.failJSHint, jshint.reporter('fail')));
+        pipe(gulpIf(enabled.failJSHint, jshint.reporter('fail')));
 }));
 
 /**

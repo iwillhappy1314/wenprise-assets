@@ -1,13 +1,15 @@
 {
+  "animate.css": "animate-61f5e9e85f.css",
   "imagesloaded.js": "imagesloaded-1a4e91fae1.js",
   "isotope.js": "isotope-b4d5a8e456.js",
   "jquery-ias.js": "jquery-ias-3b8b089173.js",
-  "jquery.js": "jquery-869c8398bb.js",
-  "magnific-popup.css": "magnific-popup-ab7d46911b.css",
+  "jquery.js": "jquery-dc34e98924.js",
+  "magnific-popup.css": "magnific-popup-2119102596.css",
   "magnific-popup.js": "magnific-popup-aef0b51548.js",
   "main.css": "main-d41d8cd98f.css",
   "pretty-photo.js": "pretty-photo-c3fa1e5301.js",
-  "slick-carousel.css": "slick-carousel-22fee6a3ca.css",
+  "slick-carousel.css": "slick-carousel-35728ab57b.css",
   "slick-carousel.js": "slick-carousel-59440d9643.js",
-  "theia-sticky-sidebar.js": "theia-sticky-sidebar-d98c9bff08.js"
+  "theia-sticky-sidebar.js": "theia-sticky-sidebar-d98c9bff08.js",
+  "wow.js": "wow-c50de62e14.js"
 }

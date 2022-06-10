@@ -16,6 +16,7 @@
     "isotope-layout": "^3.0.6",
     "jquery-ias": "^2.3.1",
     "sticky-kit": "^1.1.2",
+    "wow.js": "^1.1.2",
     "theia-sticky-sidebar": "^1.7.0"
   },
   "overrides": {

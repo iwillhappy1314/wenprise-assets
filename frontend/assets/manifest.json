@@ -6,6 +6,12 @@
             ],
             "main": true
         },
+        "animate.css": {
+            "files": [
+                "styles/animate.scss"
+            ],
+            "main": false
+        },
         "jquery.js": {
             "bower": [
                 "jquery"
@@ -54,6 +60,11 @@
         "magnific-popup.js": {
             "bower": [
                 "magnific-popup"
+            ]
+        },
+        "wow.js": {
+            "bower": [
+                "wow.js"
             ]
         }
     },
