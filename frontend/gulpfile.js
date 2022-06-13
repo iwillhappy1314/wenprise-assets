@@ -189,6 +189,7 @@ gulp.task('styles', gulp.series('wiredep', async () => {
 gulp.task('scripts', gulp.series(async () => {
     const merged = merge();
     manifest.forEachDependency('js', (dep) => {
+        console.log(dep);
         merged.add(
             gulp.src(dep.globs, {base: 'scripts'}).pipe(jsTasks(dep.name)));
     });
