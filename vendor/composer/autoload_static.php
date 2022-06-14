@@ -6,27 +6,23 @@ namespace Composer\Autoload;
 
 class ComposerStaticInit26bb8e9d903c52e774f62c5ff99187d0
 {
-    public static $files = array (
-        '3da2cb9ed2940c094f3520403efca1f3' => __DIR__ . '/../..' . '/src/Init.php',
-    );
-
     public static $prefixLengthsPsr4 = array (
         'W' => 
         array (
-            'Wenprise\\Assets\\' => 16,
+            'WPackio\\' => 8,
         ),
     );
 
     public static $prefixDirsPsr4 = array (
-        'Wenprise\\Assets\\' => 
+        'WPackio\\' => 
         array (
-            0 => __DIR__ . '/../..' . '/src',
+            0 => __DIR__ . '/..' . '/wpackio/enqueue/inc',
         ),
     );
 
     public static $classMap = array (
         'Composer\\InstalledVersions' => __DIR__ . '/..' . '/composer/InstalledVersions.php',
-        'Wenprise\\Assets\\Init' => __DIR__ . '/../..' . '/src/Init.php',
+        'WPackio\\Enqueue' => __DIR__ . '/..' . '/wpackio/enqueue/inc/Enqueue.php',
     );
 
     public static function getInitializer(ClassLoader $loader)

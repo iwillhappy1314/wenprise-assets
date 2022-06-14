@@ -1,0 +1,186 @@
+{
+  "animate.css": "vendor/animate-639a7c70.css",
+  "animate.css.map": "vendor/animate-639a7c70.css.map",
+  "animate.js": "vendor/animate-8b7b5257.js",
+  "animate.js.map": "vendor/animate-8b7b5257.js.map",
+  "imageLoaded.js": "vendor/imageLoaded-7f30ed02.js",
+  "imageLoaded.js.map": "vendor/imageLoaded-7f30ed02.js.map",
+  "isotope.js": "vendor/isotope-09af933c.js",
+  "isotope.js.map": "vendor/isotope-09af933c.js.map",
+  "jqueryIas.js": "vendor/jqueryIas-2e418b2a.js",
+  "jqueryIas.js.map": "vendor/jqueryIas-2e418b2a.js.map",
+  "magnificPopup.css": "vendor/magnificPopup-13e887e9.css",
+  "magnificPopup.css.map": "vendor/magnificPopup-13e887e9.css.map",
+  "magnificPopup.js": "vendor/magnificPopup-dde0dcc6.js",
+  "magnificPopup.js.map": "vendor/magnificPopup-dde0dcc6.js.map",
+  "main.css": "vendor/main-4acbb6c5.css",
+  "main.css.map": "vendor/main-4acbb6c5.css.map",
+  "main.js": "vendor/main-49613376.js",
+  "main.js.map": "vendor/main-49613376.js.map",
+  "runtime.js": "vendor/runtime-9fdd4f2e.js",
+  "runtime.js.map": "vendor/runtime-9fdd4f2e.js.map",
+  "slickCarousel.css": "vendor/slickCarousel-db4e898f.css",
+  "slickCarousel.css.map": "vendor/slickCarousel-db4e898f.css.map",
+  "slickCarousel.js": "vendor/slickCarousel-c89b4c0d.js",
+  "slickCarousel.js.map": "vendor/slickCarousel-c89b4c0d.js.map",
+  "swiper.css": "vendor/swiper-e298495d.css",
+  "swiper.css.map": "vendor/swiper-e298495d.css.map",
+  "swiper.js": "vendor/swiper-cd0033fd.js",
+  "swiper.js.map": "vendor/swiper-cd0033fd.js.map",
+  "theiaStickySidebar.js": "vendor/theiaStickySidebar-7a6108c1.js",
+  "theiaStickySidebar.js.map": "vendor/theiaStickySidebar-7a6108c1.js.map",
+  "wow.js": "vendor/wow-c7893059.js",
+  "wow.js.map": "vendor/wow-c7893059.js.map",
+  "wpackioEp": {
+    "main": {
+      "assets": {
+        "js": [
+          "vendor/runtime-9fdd4f2e.js",
+          "vendor/main-49613376.js"
+        ],
+        "js.map": [
+          "vendor/runtime-9fdd4f2e.js.map",
+          "vendor/main-49613376.js.map"
+        ],
+        "css": [
+          "vendor/main-4acbb6c5.css"
+        ],
+        "css.map": [
+          "vendor/main-4acbb6c5.css.map"
+        ]
+      }
+    },
+    "animate": {
+      "assets": {
+        "js": [
+          "vendor/runtime-9fdd4f2e.js",
+          "vendor/animate-8b7b5257.js"
+        ],
+        "js.map": [
+          "vendor/runtime-9fdd4f2e.js.map",
+          "vendor/animate-8b7b5257.js.map"
+        ],
+        "css": [
+          "vendor/animate-639a7c70.css"
+        ],
+        "css.map": [
+          "vendor/animate-639a7c70.css.map"
+        ]
+      }
+    },
+    "magnificPopup": {
+      "assets": {
+        "js": [
+          "vendor/runtime-9fdd4f2e.js",
+          "vendor/magnificPopup-dde0dcc6.js"
+        ],
+        "js.map": [
+          "vendor/runtime-9fdd4f2e.js.map",
+          "vendor/magnificPopup-dde0dcc6.js.map"
+        ],
+        "css": [
+          "vendor/magnificPopup-13e887e9.css"
+        ],
+        "css.map": [
+          "vendor/magnificPopup-13e887e9.css.map"
+        ]
+      }
+    },
+    "slickCarousel": {
+      "assets": {
+        "js": [
+          "vendor/runtime-9fdd4f2e.js",
+          "vendor/slickCarousel-c89b4c0d.js"
+        ],
+        "js.map": [
+          "vendor/runtime-9fdd4f2e.js.map",
+          "vendor/slickCarousel-c89b4c0d.js.map"
+        ],
+        "css": [
+          "vendor/slickCarousel-db4e898f.css"
+        ],
+        "css.map": [
+          "vendor/slickCarousel-db4e898f.css.map"
+        ]
+      }
+    },
+    "swiper": {
+      "assets": {
+        "js": [
+          "vendor/runtime-9fdd4f2e.js",
+          "vendor/swiper-cd0033fd.js"
+        ],
+        "js.map": [
+          "vendor/runtime-9fdd4f2e.js.map",
+          "vendor/swiper-cd0033fd.js.map"
+        ],
+        "css": [
+          "vendor/swiper-e298495d.css"
+        ],
+        "css.map": [
+          "vendor/swiper-e298495d.css.map"
+        ]
+      }
+    },
+    "jqueryIas": {
+      "assets": {
+        "js": [
+          "vendor/runtime-9fdd4f2e.js",
+          "vendor/jqueryIas-2e418b2a.js"
+        ],
+        "js.map": [
+          "vendor/runtime-9fdd4f2e.js.map",
+          "vendor/jqueryIas-2e418b2a.js.map"
+        ]
+      }
+    },
+    "isotope": {
+      "assets": {
+        "js": [
+          "vendor/runtime-9fdd4f2e.js",
+          "vendor/isotope-09af933c.js"
+        ],
+        "js.map": [
+          "vendor/runtime-9fdd4f2e.js.map",
+          "vendor/isotope-09af933c.js.map"
+        ]
+      }
+    },
+    "theiaStickySidebar": {
+      "assets": {
+        "js": [
+          "vendor/runtime-9fdd4f2e.js",
+          "vendor/theiaStickySidebar-7a6108c1.js"
+        ],
+        "js.map": [
+          "vendor/runtime-9fdd4f2e.js.map",
+          "vendor/theiaStickySidebar-7a6108c1.js.map"
+        ]
+      }
+    },
+    "imageLoaded": {
+      "assets": {
+        "js": [
+          "vendor/runtime-9fdd4f2e.js",
+          "vendor/imageLoaded-7f30ed02.js"
+        ],
+        "js.map": [
+          "vendor/runtime-9fdd4f2e.js.map",
+          "vendor/imageLoaded-7f30ed02.js.map"
+        ]
+      }
+    },
+    "wow": {
+      "assets": {
+        "js": [
+          "vendor/runtime-9fdd4f2e.js",
+          "vendor/wow-c7893059.js"
+        ],
+        "js.map": [
+          "vendor/runtime-9fdd4f2e.js.map",
+          "vendor/wow-c7893059.js.map"
+        ]
+      }
+    }
+  }
+}

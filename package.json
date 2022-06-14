@@ -1,0 +1,31 @@
+{
+  "name": "front",
+  "version": "0.1.0",
+  "private": true,
+  "devDependencies": {
+    "@wpackio/scripts": "^6.4.0",
+    "postcss": "^8.4.14",
+    "sass": "^1.52.3"
+  },
+  "scripts": {
+    "bootstrap": "wpackio-scripts bootstrap",
+    "build": "wpackio-scripts build",
+    "start": "wpackio-scripts start",
+    "archive": "wpackio-scripts pack"
+  },
+  "dependencies": {
+    "@wpackio/entrypoint": "^6.4.0",
+    "animate.css": "^4.1.1",
+    "imagesloaded": "^5.0.0",
+    "isotope-layout": "^3.0.6",
+    "jquery-ias": "^2.3.1",
+    "magnific-popup": "^1.1.0",
+    "masonry-layout": "^4.2.2",
+    "owl-carousel": "^1.0.0",
+    "slick-carousel": "^1.8.1",
+    "smartmenus": "^1.1.1",
+    "swiper": "^8.2.4",
+    "theia-sticky-sidebar": "^1.7.0",
+    "wow.js": "^1.2.2"
+  }
+}

@@ -2,14 +2,11 @@
   "name": "wenprise/assets",
   "description": "Most used assets in WordPress theme development.",
   "require": {
-    "ext-json": "*"
+    "ext-json": "*",
+    "wpackio/enqueue": "^3.4"
   },
   "autoload": {
-    "psr-4": {
-      "Wenprise\\Assets\\": "src/"
-    },
     "files": [
-      "src/Init.php"
     ]
   },
   "license": "MIT",
