@@ -24,37 +24,69 @@ if ( ! defined('WENPRISE_ASSETS_VERSION')) {
     define('WENPRISE_ASSETS_VERSION', '1.0.0');
 }
 
-add_action('wp_enqueue_scripts', function ()
+class WenpriseAssetsInit
 {
-    wp_register_script('wprs-imagesloaded', wenprise_asset_get_url('main.js'), ['jquery'], WENPRISE_ASSETS_VERSION, true);
+    /**
+     * @var \WPackio\Enqueue
+     */
+    public \WPackio\Enqueue $enqueue;
 
-    // wp_register_script('wprs-pretty-photo', wenprise_asset_get_url('prettyPhoto.js'), ['jquery'], WENPRISE_ASSETS_VERSION, true);
+    public function __construct()
+    {
+        $this->enqueue = new \WPackio\Enqueue(
+            'wenpriseAssets',
+            'dist',
+            WENPRISE_ASSETS_VERSION,
+            'plugin',
+            __FILE__
+        );
 
-    wp_register_script('wprs-isotope', wenprise_asset_get_url('isotope.js'), [], WENPRISE_ASSETS_VERSION, true);
+        add_action('wp_enqueue_scripts', [$this, 'register_assets']);
+    }
 
-    wp_register_script('wprs-jquery-ias', wenprise_asset_get_url('jqueryIas.js'), ['jquery'], WENPRISE_ASSETS_VERSION, true);
+    public function register_assets()
+    {
 
-    wp_register_script('wprs-slick-carousel', wenprise_asset_get_url('slickCarousel.js'), ['jquery'], WENPRISE_ASSETS_VERSION, true);
+        $this->enqueue->register('vendor', 'imageLoaded', ['js' => true, 'css' => true,]);
+        $this->enqueue->register('vendor', 'isotope', []);
+        $this->enqueue->register('vendor', 'jqueryIas', []);
+        $this->enqueue->register('vendor', 'slickCarousel', ['js' => true, 'css' => true,]);
+        $this->enqueue->register('vendor', 'magnificPopup', ['js' => true, 'css' => true,]);
+        $this->enqueue->register('vendor', 'theiaStickySidebar', []);
+        $this->enqueue->register('vendor', 'wow', []);
+        $this->enqueue->register('vendor', 'swiper', ['js' => true, 'css' => true,]);
+        $this->enqueue->register('vendor', 'animate', ['js' => false, 'css' => true,]);
 
-    wp_register_script('wprs-magnific-popup', wenprise_asset_get_url('magnificPopup.js'), ['jquery'], WENPRISE_ASSETS_VERSION, true);
+        wp_register_script('wprs-runtime', $this->get_assets_url('runtime.js'), [], WENPRISE_ASSETS_VERSION);
+        wp_register_script('wprs-imagesloaded', $this->get_assets_url('imageLoaded.js'), ['jquery', 'wprs-runtime'], WENPRISE_ASSETS_VERSION, true);
 
-    wp_register_script('theia-sticky-sidebar', wenprise_asset_get_url('theiaStickySidebar.js'), ['jquery'], WENPRISE_ASSETS_VERSION, true);
+        // wp_register_script('wprs-pretty-photo', $this->get_assets_url('prettyPhoto.js'), ['jquery'], WENPRISE_ASSETS_VERSION, true);
 
-    wp_register_script('wprs-wow', wenprise_asset_get_url('wow.js'), [], WENPRISE_ASSETS_VERSION, 'true');
+        wp_register_script('wprs-isotope', $this->get_assets_url('isotope.js'), ['wprs-runtime'], WENPRISE_ASSETS_VERSION, true);
 
-    wp_register_script('wprs-swiper', wenprise_asset_get_url('swiper.js'), [], WENPRISE_ASSETS_VERSION, 'true');
+        wp_register_script('wprs-jquery-ias', $this->get_assets_url('jqueryIas.js'), ['jquery', 'wprs-runtime'], WENPRISE_ASSETS_VERSION, true);
 
-    wp_register_style('wprs-magnific-popup', wenprise_asset_get_url('magnificPopup.css'), [], WENPRISE_ASSETS_VERSION, 'screen');
+        wp_register_script('wprs-slick-carousel', $this->get_assets_url('slickCarousel.js'), ['jquery', 'wprs-runtime'], WENPRISE_ASSETS_VERSION, true);
 
-    wp_register_style('wprs-slick-carousel', wenprise_asset_get_url('slickCarousel.css'), [], WENPRISE_ASSETS_VERSION, 'screen');
+        wp_register_script('wprs-magnific-popup', $this->get_assets_url('magnificPopup.js'), ['jquery', 'wprs-runtime'], WENPRISE_ASSETS_VERSION, true);
 
-    wp_register_style('wprs-animate', wenprise_asset_get_url('animate.css'), [], WENPRISE_ASSETS_VERSION, 'screen');
+        wp_register_script('theia-sticky-sidebar', $this->get_assets_url('theiaStickySidebar.js'), ['jquery', 'wprs-runtime'], WENPRISE_ASSETS_VERSION, true);
 
-    wp_register_style('wprs-swiper', wenprise_asset_get_url('swiper.css'), [], WENPRISE_ASSETS_VERSION, 'screen');
-});
+        wp_register_script('wprs-wow', $this->get_assets_url('wow.js'), ['wprs-runtime'], WENPRISE_ASSETS_VERSION, 'true');
 
-if ( ! function_exists('wenprise_asset_get_url')) {
-    function wenprise_asset_get_url($name)
+        wp_register_script('wprs-swiper', $this->get_assets_url('swiper.js'), ['wprs-runtime'], WENPRISE_ASSETS_VERSION, 'true');
+
+        wp_register_style('wprs-magnific-popup', $this->get_assets_url('magnificPopup.css'), [], WENPRISE_ASSETS_VERSION, 'screen');
+
+        wp_register_style('wprs-slick-carousel', $this->get_assets_url('slickCarousel.css'), [], WENPRISE_ASSETS_VERSION, 'screen');
+
+        wp_register_style('wprs-animate', $this->get_assets_url('animate.css'), [], WENPRISE_ASSETS_VERSION, 'screen');
+
+        wp_register_style('wprs-swiper', $this->get_assets_url('swiper.css'), [], WENPRISE_ASSETS_VERSION, 'screen');
+    }
+
+
+    public function get_assets_url($name)
     {
         $enqueue = new \WPackio\Enqueue('vendor', 'dist', WENPRISE_ASSETS_VERSION, 'plugin', __FILE__);
         $assets  = $enqueue->getManifest('vendor');
@@ -62,3 +94,5 @@ if ( ! function_exists('wenprise_asset_get_url')) {
         return WENPRISE_ASSETS_URL . 'dist/' . $assets[ $name ];
     }
 }
+
+new WenpriseAssetsInit();

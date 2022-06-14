@@ -1,6 +1,6 @@
 {
-  "animate.css": "vendor/animate-639a7c70.css",
-  "animate.css.map": "vendor/animate-639a7c70.css.map",
+  "animate.css": "vendor/animate-4794bacb.css",
+  "animate.css.map": "vendor/animate-4794bacb.css.map",
   "animate.js": "vendor/animate-8b7b5257.js",
   "animate.js.map": "vendor/animate-8b7b5257.js.map",
   "imageLoaded.js": "vendor/imageLoaded-7f30ed02.js",
@@ -61,10 +61,10 @@
           "vendor/animate-8b7b5257.js.map"
         ],
         "css": [
-          "vendor/animate-639a7c70.css"
+          "vendor/animate-4794bacb.css"
         ],
         "css.map": [
-          "vendor/animate-639a7c70.css.map"
+          "vendor/animate-4794bacb.css.map"
         ]
       }
     },
