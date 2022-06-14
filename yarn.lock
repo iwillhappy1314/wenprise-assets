@@ -3120,12 +3120,12 @@ dom-serializer@^1.0.1:
     domhandler "^4.2.0"
     entities "^2.0.0"
 
-dom7@^4.0.4:
-  version "4.0.4"
-  resolved "https://registry.yarnpkg.com/dom7/-/dom7-4.0.4.tgz#8b68c5d8e5e2ed0fddb1cb93e433bc9060c8f3fb"
-  integrity sha512-DSSgBzQ4rJWQp1u6o+3FVwMNnT5bzQbMb+o31TjYYeRi05uAcpF8koxdfzeoe5ElzPmua7W7N28YJhF7iEKqIw==
+dom7@^2.1.5:
+  version "2.1.5"
+  resolved "https://registry.yarnpkg.com/dom7/-/dom7-2.1.5.tgz#a79411017800b31d8400070cdaebbfc92c1f6377"
+  integrity sha512-xnhwVgyOh3eD++/XGtH+5qBwYTgCm0aW91GFgPJ3XG+jlsRLyJivnbP0QmUBFhI+Oaz9FV0s7cxgXHezwOEBYA==
   dependencies:
-    ssr-window "^4.0.0"
+    ssr-window "^2.0.0"
 
 domain-browser@^1.1.1:
   version "1.2.0"
@@ -4440,7 +4440,7 @@ jquery-ias@^2.3.1:
   dependencies:
     jquery ">=1.12"
 
-jquery@>=1.12, jquery@>=1.7.0:
+jquery@>=1.12, jquery@>=1.7.0, jquery@>=1.8.3:
   version "3.6.0"
   resolved "https://registry.yarnpkg.com/jquery/-/jquery-3.6.0.tgz#c72a09f15c1bdce142f49dbf1170bdf8adac2470"
   integrity sha512-JVzAR/AjBvVt2BmYhxRCSYysDsPcssdmTFnzyLEts9qNwmjmu4JTAMYubEfwVOSwpQ1I1sKKFcxhZCI2buerfw==
@@ -5211,10 +5211,12 @@ outlayer@^2.1.0:
     fizzy-ui-utils "^2.0.0"
     get-size "^2.0.2"
 
-owl-carousel@^1.0.0:
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/owl-carousel/-/owl-carousel-1.0.0.tgz#70ca83d4847d3b903a330942523db6334f43ce6e"
-  integrity sha512-xgOxxUqpSPM0dopWkcMri9MoGv8TrEDAnsc+6OYuHhO2x3YpsEKDW2fJomPDOA6KkSTa3utLvgP+irVwAXSGog==
+owl.carousel@^2.3.4:
+  version "2.3.4"
+  resolved "https://registry.yarnpkg.com/owl.carousel/-/owl.carousel-2.3.4.tgz#6c53dc8d24304b790e4f27a1dc4a655e973ccdc9"
+  integrity sha512-JaDss9+feAvEW8KZppPSpllfposEzQiW+Ytt/Xm5t/3CTJ7YVmkh6RkWixoA2yXk2boIwedYxOvrrppIGzru9A==
+  dependencies:
+    jquery ">=1.8.3"
 
 p-all@^2.1.0:
   version "2.1.0"
@@ -6372,10 +6374,10 @@ split-string@^3.0.1, split-string@^3.0.2:
   dependencies:
     extend-shallow "^3.0.0"
 
-ssr-window@^4.0.0, ssr-window@^4.0.2:
-  version "4.0.2"
-  resolved "https://registry.yarnpkg.com/ssr-window/-/ssr-window-4.0.2.tgz#dc6b3ee37be86ac0e3ddc60030f7b3bc9b8553be"
-  integrity sha512-ISv/Ch+ig7SOtw7G2+qkwfVASzazUnvlDTwypdLoPoySv+6MqlOV10VwPSE6EWkGjhW50lUmghPmpYZXMu/+AQ==
+ssr-window@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/ssr-window/-/ssr-window-2.0.0.tgz#98c301aef99523317f8d69618f0010791096efc4"
+  integrity sha512-NXzN+/HPObKAx191H3zKlYomE5WrVIkoCB5IaSdvKokxTpjBdWfr0RaP+1Z5KOfDT0ZVz+2tdtiBkhsEQ9p+0A==
 
 ssri@^6.0.1:
   version "6.0.2"
@@ -6535,13 +6537,13 @@ supports-preserve-symlinks-flag@^1.0.0:
   resolved "https://registry.yarnpkg.com/supports-preserve-symlinks-flag/-/supports-preserve-symlinks-flag-1.0.0.tgz#6eda4bd344a3c94aea376d4cc31bc77311039e09"
   integrity sha512-ot0WnXS9fgdkgIcePe6RHNk1WA8+muPa6cSjeR3V8K27q9BB1rTE3R1p7Hv0z1ZyAc8s6Vvv8DIyWf681MAt0w==
 
-swiper@^8.2.4:
-  version "8.2.4"
-  resolved "https://registry.yarnpkg.com/swiper/-/swiper-8.2.4.tgz#2d377bb49ece6b3b21792667c2a8cce28390dee0"
-  integrity sha512-TPq64KiZUt8lZY5ZEg75RjToT+RwfLomfKIpcFLy6+UCUp2kL7hHWslLxjFtcFeiwfG67RHFYbJnq6tsothcJQ==
+swiper@5.4.1:
+  version "5.4.1"
+  resolved "https://registry.yarnpkg.com/swiper/-/swiper-5.4.1.tgz#6731e000e97f8b6560c11b141ebaf559063af565"
+  integrity sha512-l2EiWe7uOXB2EBMVLtJqn51FW22wF9e24WETT+S+tuFNvSDq1gadc/hyGGsAMqFGKJKIO6q6cqk7ToVaOI+onw==
   dependencies:
-    dom7 "^4.0.4"
-    ssr-window "^4.0.2"
+    dom7 "^2.1.5"
+    ssr-window "^2.0.0"
 
 symbol-observable@1.0.1:
   version "1.0.1"

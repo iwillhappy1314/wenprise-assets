@@ -1,1 +1,1 @@
-import 'wow.js'
+import WOW from 'wow.js';

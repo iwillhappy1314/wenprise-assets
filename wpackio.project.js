@@ -30,14 +30,15 @@ module.exports = {
         // You do not need to worry about file-size, because we would do
         // code splitting automatically. When using ES6 modules, forget
         // global namespace pollutions 😉
-        main                : ['./assets/styles/main.scss'],
-        animate             : ['./assets/styles/animate.scss'],
-        magnificPopup : ['./assets/scripts/magnific-popup.js'],
-        slickCarousel: ['./assets/scripts/slick-carousel.js'],
-        swiper              : ['./assets/scripts/swiper.js'],
-        jqueryIas           : ['./assets/scripts/jquery-ias.js'],
-        isotope             : ['./assets/scripts/isotope.js'],
-        theiaStickySidebar  : ['./assets/scripts/theia-sticky-sidebar.js'],
+        main              : ['./assets/styles/main.scss'],
+        animate           : ['./assets/styles/animate.scss'],
+        magnificPopup     : ['./assets/scripts/magnific-popup.js'],
+        slickCarousel     : ['./assets/scripts/slick-carousel.js'],
+        owlCarousel       : ['./assets/scripts/owl-carousel.js'],
+        swiper            : ['./assets/scripts/swiper.js'],
+        jqueryIas         : ['./assets/scripts/jquery-ias.js'],
+        isotope           : ['./assets/scripts/isotope.js'],
+        theiaStickySidebar: ['./assets/scripts/theia-sticky-sidebar.js'],
         //prettyPhoto         : ['./assets/scripts/pretty-photo.js'],
         imageLoaded: ['./assets/scripts/imagesloaded.js'],
         wow        : ['./assets/scripts/wow.js'],

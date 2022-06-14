@@ -21,10 +21,10 @@
     "jquery-ias": "^2.3.1",
     "magnific-popup": "^1.1.0",
     "masonry-layout": "^4.2.2",
-    "owl-carousel": "^1.0.0",
+    "owl.carousel": "^2.3.4",
     "slick-carousel": "^1.8.1",
     "smartmenus": "^1.1.1",
-    "swiper": "^8.2.4",
+    "swiper": "5.4.1",
     "theia-sticky-sidebar": "^1.7.0",
     "wow.js": "^1.2.2"
   }
