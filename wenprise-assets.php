@@ -29,7 +29,7 @@ class WenpriseAssetsInit
     /**
      * @var \WPackio\Enqueue
      */
-    public \WPackio\Enqueue $enqueue;
+    public $enqueue;
 
     public function __construct()
     {
