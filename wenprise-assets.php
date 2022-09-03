@@ -41,7 +41,7 @@ class WenpriseAssetsInit
             __FILE__
         );
 
-        add_action('wp_enqueue_scripts', [$this, 'register_assets']);
+        add_action('wp_enqueue_scripts', [$this, 'register_assets'], 1);
     }
 
     public function register_assets()
